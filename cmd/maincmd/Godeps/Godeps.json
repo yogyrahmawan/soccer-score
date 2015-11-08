@@ -1,0 +1,33 @@
+{
+	"ImportPath": "github.com/yogyrahmawan/soccer-score/cmd/maincmd",
+	"GoVersion": "go1.4",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.5.1",
+			"Rev": "736840a898fb560e3d93413410a4cb1371f42f71"
+		},
+		{
+			"ImportPath": "github.com/Syfaro/telegram-bot-api",
+			"Rev": "a1207f63917b5bdf32db96e717fcdcc6d63a3f05"
+		},
+		{
+			"ImportPath": "github.com/technoweenie/multipartstreamer",
+			"Comment": "v1.0.1",
+			"Rev": "a90a01d73ae432e2611d178c18367fbaa13e0154"
+		},
+		{
+			"ImportPath": "github.com/yhat/scrape",
+			"Rev": "47d070048ae58bf228dfdfcfaf1d1c6abc00620e"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "01256db42e5106196a3473ec1620727a383500e8"
+		},
+		{
+			"ImportPath": "labix.org/v2/mgo",
+			"Comment": "287",
+			"Rev": "gustavo@niemeyer.net-20140501184651-975yyw9ipld92pji"
+		}
+	]
+}
