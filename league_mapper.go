@@ -36,7 +36,7 @@ func NewLeagueMapper(session *mgo.Session, key string, url string, sourceKey str
 //LeagueList get league list
 func LeagueList(session *mgo.Session) ([]LeagueMapper, error) {
 	ll := []LeagueMapper{}
-	if err := LeagueMappers(session).Find(bson.M{}).All(&ll); err != nil {
+	if err := LeagueMappers(session).Find(bson.M{}).Sort("key").All(&ll); err != nil {
 		return nil, err
 	}
 

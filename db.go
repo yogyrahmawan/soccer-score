@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	defaultURI = "mongodb://127.0.0.1/soccerscore"
+	defaultURI = "mongodb://dockerhost:27017/soccerscore"
 )
 
 var (
@@ -42,6 +42,7 @@ func Session() (*mgo.Session, error) {
 
 	if ses == nil {
 		mgoURI := getDbURI()
+		log.Println(mgoURI)
 		if ses, err = mgo.Dial(mgoURI); err != nil {
 			log.Fatal("can't connect to mongo:", err)
 			return nil, err
